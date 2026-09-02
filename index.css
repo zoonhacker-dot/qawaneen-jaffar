@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Nastaliq Urdu', 'Amiri', 'Plus Jakarta Sans', serif;
+  }
+}
+
+.font-nastaliq {
+  font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2e8cf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4a373;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bc6c25;
+}
+
+/* Antique & Natural Tones helper styles */
+.antique-border {
+  border-color: #d4a373;
+}
+
+.parchment-bg {
+  background-color: #fdfaf1;
+}
+
+.parchment-card {
+  background-color: #ffffff;
+  border: 1px solid #e7d8c9;
+}
+
+.parchment-pattern {
+  background-color: #fdfaf1;
+  background-image: radial-gradient(#d4a373 0.75px, transparent 0.75px);
+  background-size: 20px 20px;
+}
+
+/* Dedicated Print Styles for Parchment & Manuscripts */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+
+  /* Hide everything in root except the print sheet */
+  body * {
+    visibility: hidden;
+  }
+
+  #takseer-parchment-print-sheet,
+  #takseer-parchment-print-sheet * {
+    visibility: visible;
+  }
+
+  #takseer-parchment-print-sheet {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 !important;
+    padding: 24px !important;
+    border-width: 3px !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}
+

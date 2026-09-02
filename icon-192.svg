@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="36" fill="#2c1e14"/>
+  <circle cx="96" cy="96" r="76" fill="#3d2b1f" stroke="#bc6c25" stroke-width="4"/>
+  <text x="96" y="125" font-size="80" font-family="'Amiri', 'Traditional Arabic', serif" font-weight="bold" fill="#dda15e" text-anchor="middle">ک</text>
+  <circle cx="140" cy="52" r="10" fill="#606c38" stroke="#fefae0" stroke-width="2"/>
+</svg>
